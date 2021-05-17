@@ -1,0 +1,57 @@
+package MauPhan6;
+
+import Mauphan5.ngayThang;
+
+public class SV {
+    private  String maSv;
+    private  String hoTen;
+    private  boolean gt;
+    private  ngayThang namSinh;
+    public SV(){
+        maSv=hoTen="";
+        namSinh=null;
+        gt=true;
+    }
+
+    public SV(String maSv, String hoTen, boolean gt, ngayThang namSinh) {
+        this.maSv = maSv;
+        this.hoTen = hoTen;
+        this.gt = gt;
+        this.namSinh = namSinh;
+    }
+
+    public String getMaSv() {
+        return maSv;
+    }
+
+    public void setMaSv(String maSv) {
+        this.maSv = maSv;
+    }
+
+    public String getHoTen() {
+        return hoTen;
+    }
+
+    public void setHoTen(String hoTen) {
+        this.hoTen = hoTen;
+    }
+
+    public boolean isGt() {
+        return gt;
+    }
+
+    public void setGt(boolean gt) {
+        this.gt = gt;
+    }
+
+    public ngayThang getNamSinh() {
+        return namSinh;
+    }
+
+    public void setNamSinh(ngayThang namSinh) {
+        this.namSinh = namSinh;
+    }
+    public String toString(){
+        return maSv+"\t"+hoTen+"\t"+((gt)?"Nam":"Nu"+namSinh);
+    }
+}
